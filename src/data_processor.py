@@ -6,8 +6,8 @@ text = ""
 for page in reader.pages:
     text += page.extract_text() + "\n"
 
-with open("transcript.txt", "w", encoding="utf-8") as f:
-    f.write(text)
+#with open("transcript.txt", "w", encoding="utf-8") as f:
+#   f.write(text)
 
 
 
@@ -33,11 +33,9 @@ def clean_text(text):
     # Collapse 3+ newlines into a paragraph break
     text = re.sub(r"\n{3,}", "\n\n", text)
     
-    
     return text.strip()
 
 
 cleaned = clean_text(text)
-
 with open("transcript_clean.txt", "w", encoding="utf-8") as f:
     f.write(cleaned)
