@@ -58,7 +58,7 @@ INSTRUCTIONS:
 
 11. End with one memorable takeaway that anyone
     can understand.
-
+    
 LENGTH:
 Aim for a podcast of approximately 5 minutes.
 Keep the script under 3,500 characters.
