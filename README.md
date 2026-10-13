@@ -1,4 +1,4 @@
-# BrainBites: Turn Research Papers into Podcasts Anyone Can Follow
+# BrainBite: Turn Research Papers into Podcasts Anyone Can Follow
 
 Upload a research paper (PDF) and get back a short podcast: a spoken script that explains the paper's five key insights in plain language, plus an audio file you can play or download. It is written for curious adults with zero background in the topic.
 
