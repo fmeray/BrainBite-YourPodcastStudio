@@ -2,7 +2,6 @@
 
 Upload a research paper (PDF) and get back a short, spoken explanation written for children aged 8 to 12: a script you can read and an audio file you can play or download.
 
-> **Portfolio project** | AI consulting case study: problem framing, solution design, build, and risk analysis.
 ---
 
 ## 1. Business Case
