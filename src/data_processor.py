@@ -1,15 +1,13 @@
 from pypdf import PdfReader
 import re
 
-reader = PdfReader("From-adoption-to-impact.pdf")
-text = ""
-for page in reader.pages:
-    text += page.extract_text() + "\n"
 
-#with open("transcript.txt", "w", encoding="utf-8") as f:
-#   f.write(text)
-
-
+def read_transcript(file):
+    reader = PdfReader(file)
+    text = ""
+    for page in reader.pages:
+        text += page.extract_text() + "\n"
+    return text    
 
 def clean_text(text): 
     
@@ -35,7 +33,3 @@ def clean_text(text):
     
     return text.strip()
 
-
-cleaned = clean_text(text)
-with open("transcript_clean.txt", "w", encoding="utf-8") as f:
-    f.write(cleaned)
