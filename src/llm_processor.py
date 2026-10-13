@@ -9,8 +9,10 @@ SYSTEM_PROMPT = (
     "You are a friendly teaching assistant. "
     "Extract the 5 most important learning points "
     "and write a clear, conversational 5-minute recap podcast script."
+    "Keep the script under 3,500 characters."
 )
 
+    
 def create_script(transcript):
     if not transcript or not transcript.strip():
         raise ValueError("The transcript is empty.")
@@ -26,9 +28,3 @@ def create_script(transcript):
     return response.choices[0].message.content
 
 
-
-transcript_path = Path(__file__).with_name("transcript_clean.txt")
-transcript = transcript_path.read_text(encoding="utf-8")
-
-script = create_script(transcript)
-print(script)
